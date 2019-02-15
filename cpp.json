@@ -1,0 +1,55 @@
+{
+    "name": {
+        "prefix": "example",
+        "body": [
+          "Contents of the snippet",
+          "Where each element is each line of the snippet",
+          "Input parameters are added with ${1:id}",
+          "Elements are 1 indexed"
+        ],
+        "description": "A given description"
+    },
+    "For_Loop": {
+        "prefix": "for",
+        "body": [
+          "for (${1:int i=0;i<v.size();i++}) {$0}"
+        ],
+        "description": "For Loop"
+    },
+    "main": {
+	"prefix": "main",
+	"body": [
+	  "int main() {\n\t$0\n}"
+	],
+	"description": "main function"
+    },
+    "include": {
+	"prefix": "Inc",
+	"body": [
+	  "#include <${1:bits/stdc++.h}>\n$0"
+	],
+	"description": "include"
+    },
+    "include2": {
+	"prefix": "inc",
+	"body": [
+	  "#include \"${1:bits/stdc++.h}\"\n$0"
+	],
+	"description": "include"
+    },
+    "namespace": {
+	"prefix": "namespace",
+	"body": [
+	  "using namespace ${1:std};\n$0"
+	],
+	"description": "using namespace std"
+    },
+    "printf": {
+	"prefix": "print",
+	"body": [
+	  "printf(${1:\"%d\",&a});$0"
+	],
+	"description": "printf function"
+    }
+}
+
